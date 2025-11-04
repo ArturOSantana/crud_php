@@ -1,27 +1,26 @@
+<?php include "header.php";
+?>
+<div class="container-fluid">
+<form action="insert.php" cmethod="post">
+    <div class="col-md-6">
+        <label for="nome" class="form-label"> Nome:</label><br>
+        <input type="text" class="form-control" id="nome" name="nome"> <br><br>
+    </div>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form action="insert.php" method="post">
-    <label for="nome"> Nome:</label><br>
-    <input type="text" id="nome" name="nome"> <br><br>
+    <div class="col-md-6">
+        <label for="email" class="form-label"> E-mail::</label><br>
+        <input type="email" id="email" class="form-control" name="email"> <br><br>
+    </div>
 
-    <label for="email"> E-mail::</label><br>
-    <input type="email" id="email" name="email"> <br><br>
+    <div class="col-md-6">
+    <label for="idade" class="form-label"> Idade::</label><br>
+    <input type="number" class="form-control" id="idade" name="idade"> <br><br>
+    </div>
+    <input type="submit" class="btn btn-success" value="Enviar">
 
-    <label for="idade"> Idade::</label><br>
-    <input type="number" id="idade" name="idade"> <br><br>
-
-    <input type="submit" value="Enviar">
-
-    </form><br> 
-    <br>
-
-<?php 
+</form><br>
+<br>
+</div>
+<?php
 include "footer.php";
-?> 
+?>

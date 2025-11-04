@@ -6,8 +6,8 @@ $id = $_POST["id"];
 
 
 try {
-    if ($aux == "nome_al") {
-        $sql = $pdo->prepare("UPDATE aluno SET nome = ? WHERE id_aluno = ?");
+    if ($aux == "nome") {
+        $sql = $pdo->prepare("UPDATE aluno SET nome_al = ? WHERE id_aluno = ?");
         $sql->execute([$novo, $id]);
     } elseif ($aux == "email") {
         $sql = $pdo->prepare("UPDATE aluno SET email = ? WHERE id_aluno = ?");
